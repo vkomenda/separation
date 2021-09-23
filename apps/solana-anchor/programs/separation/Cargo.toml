@@ -1,0 +1,22 @@
+[package]
+name = "separation"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "separation"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.16.0"
+#core = { path = "../../../../core" }
+#serde = "1.0.130"
+#serde_derive = "1.0.130"
+solana-program = "1.7.11"
